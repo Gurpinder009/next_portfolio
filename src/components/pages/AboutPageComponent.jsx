@@ -18,8 +18,8 @@ export default  function AboutMePageComponent() {
                     <div>
 
                         <p><b>EMAIL ADDRESS : </b> gurpinders1511@gmail.com</p>
-                        <p><b>Phone Number : </b>+1 7788623249</p>
-                        <p><b>Address : </b> 14485 88A AVENUE SURREY, BC</p>
+                        <p><b>PHONE NUMBER : </b>+1 7788623249</p>
+                        <p><b>ADDRESS : </b> 14485 88A AVENUE SURREY, BC</p>
                     </div>
 
                 </StyledAboutPageItem>
