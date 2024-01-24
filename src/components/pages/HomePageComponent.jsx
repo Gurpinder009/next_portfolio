@@ -33,8 +33,5 @@ export default function HomePageComponent() {
                 </StyledHomePageItem>
                 <StyledHomePageItem $data_image_url={"/arrow_left2.jpg"}   variants={FadeRightInvertAnimationVariant} initial="hidden" whileInView={"visible"}/>
         </StyledHomePageContainer>
-
-
-
     </StyledPageWrapper>
 }
