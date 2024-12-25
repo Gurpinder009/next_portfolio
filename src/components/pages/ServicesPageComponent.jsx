@@ -20,6 +20,9 @@ export default function ServicesPageComponent() {
           <CardComponent label={"Micro Services powered by golang."} img_link={"https://openupthecloud.com/wp-content/uploads/2020/01/Golang.png"} />
           <CardComponent label={"React application powered by frammer motion"} img_link={"https://refine.ams3.cdn.digitaloceanspaces.com/blog/2022-09-01-framer-text-animations/social.png"} />
           <CardComponent label={"Support for both RDBMS and NoSql."} img_link={"https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png"} />
+          <CardComponent label={"Small Scale android applications."} img_link={"https://cdn.worldvectorlogo.com/logos/android-studio-1.svg"} />
+          <CardComponent label={"High functionality hybrid applications."} img_link={"https://cdn.prod.website-files.com/64c308983b98e1ea07cc2765/6516e5be063e65d77797239e_64f7db15034873377c530fa0_Portada-nota-blog-flutter-2.2-04.png"} />
+
         </StyledProductsGrid>
 
       </StyledServicesPageWrapper>

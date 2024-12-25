@@ -11,7 +11,7 @@ align-content:start;
 row-gap:0.5rem;
 
     position:fixed;
-    height:100vw;
+    height:100vh;
     padding:0.3rem ;
     top:0;
     left:0;
