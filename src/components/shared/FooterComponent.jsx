@@ -43,8 +43,7 @@ export default function FooterComponent() {
      <a style={{textDecoration:"none"}} href="https://www.linkedin.com/in/gurpinder-singh-b94022234"><LinkedIn/></a>
 
      </div>
-     <small>copyright @gsdesgins 2023</small>
+     <small>copyright @gurpinders009 2023</small>
     </StyledFooter>
   )
 }
-

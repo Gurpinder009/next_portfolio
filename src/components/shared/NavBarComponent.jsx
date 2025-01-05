@@ -20,7 +20,7 @@ const MenuIcon = styled.button`
 export default function NavBarComponent({ isOpen, setIsOpen }) {
   return (
     <StyledNavBar variants={FadeAnimationVariant} initial="hidden" whileInView="visible">
-      <StyledBrandName> <img src={"favicon1.ico"} alt="" />GSDesigns</StyledBrandName>
+      <StyledBrandName> <img src={"favicon1.ico"} alt="" />Gurpinder Singh</StyledBrandName>
       <StyledNavLinks>
         <StyledLink  href="#home"><Home /> Home</StyledLink>
         <StyledLink  href="#about"><Person /> About</StyledLink>
