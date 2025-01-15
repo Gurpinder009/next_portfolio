@@ -271,11 +271,11 @@ export const StyledAboutPageItem = styled(motion.div)`
     border-radius: 5px;
     background-position:bottom right;
     background-repeat: no-repeat;
-    background-size: 115% 135%;
+    background-size: 100% 100%;
 
     background-image: url(${(props) =>props.$data_image_url ? props.$data_image_url : null});
     @media (max-width: 1000px) {
-      min-height: 23rem;
+      min-height: 25rem;
       background-size: 100% 100%;
     }
   }
