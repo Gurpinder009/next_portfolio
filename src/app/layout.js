@@ -3,14 +3,14 @@ import './globals.css'
 
 
 export const metadata = {
-  metadataBase: new URL('https://gsdesigns.vercel.app'),
+  metadataBase: new URL('https://gurpinders009.vercel.app'),
   title: {
-    default:"GSDESIGNS"
+    default:"Gurpinder Singh"
   },
  
   openGraph:{
-    image: 'https://gsdesign.vercel.app/opengraph-image.png',
-    title:"GSDESIGNS",
+    image: 'https://gurpinders009.vercel.app/opengraph-image.png',
+    title:"Gurpinder Singh",
     description:"My name is Gurpinder Singh, a Frontend React developer. Visit my portfolio site for more information"
   },
   keywords:["Gurpinder Singh","Gurpinder Singh React developer","Gurpinder Singh Frontend developer"],
