@@ -8,6 +8,6 @@ export default function robots(){
                 disallow:["/admin","privacy"]
             }
         ],
-        sitemap: "https://gsdesigns.vercel.app/sitemap.xml"
+        sitemap: "https://gurpinders009.vercel.app"
     }
 }

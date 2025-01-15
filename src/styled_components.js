@@ -269,13 +269,15 @@ export const StyledAboutPageItem = styled(motion.div)`
   &:first-child {
     background-color: inherit;
     border-radius: 5px;
-    background-position:bottom right;
+    background-position:bottom;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 120% 125%;
+    min-height:25rem;
+    background-shadow:1px 1px 5px rgba(21,21,21,1);
 
     background-image: url(${(props) =>props.$data_image_url ? props.$data_image_url : null});
     @media (max-width: 1000px) {
-      min-height: 25rem;
+      min-height: 23rem;
       background-size: 100% 100%;
     }
   }

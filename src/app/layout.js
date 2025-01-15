@@ -9,7 +9,7 @@ export const metadata = {
   },
  
   openGraph:{
-    image: 'https://gurpinders009.vercel.app/opengraph-image.png',
+    image: 'https://gurpinders009.vercel.app/download2.jpg',
     title:"Gurpinder Singh",
     description:"My name is Gurpinder Singh, a Frontend React developer. Visit my portfolio site for more information"
   },

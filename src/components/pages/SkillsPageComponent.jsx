@@ -1,5 +1,5 @@
 import { StyledPageWrapper, background_color,StyledSkillGridWrapper,StyledSkillPageWrapper,StyledProgressBar,StyledProgressLabel,StyledProgressBackground,StyledProgressForground,StyledProgressIndicator } from "../../styled_components";
-import { WidthAnimationVariant,FadeLeftAnimationVariant } from "../../FrammerMotionAnimations";
+import { WidthAnimationVariant,FadeLeftAnimationVariant, FadeAnimationVariant } from "../../FrammerMotionAnimations";
 
 export default function SkillsPageComponent() {
   return <StyledPageWrapper $background_color={background_color} >
@@ -37,7 +37,7 @@ export function ProgressComponent({ label, width }) {
     <StyledProgressLabel variants={FadeLeftAnimationVariant} initial="hidden" whileInView="visible">{label}</StyledProgressLabel>
     <StyledProgressBackground >
       <StyledProgressForground width={width} custom={width} variants={WidthAnimationVariant} initial="hidden" whileInView="visible" >
-        <StyledProgressIndicator>{`${width}%`}</StyledProgressIndicator>
+        <StyledProgressIndicator variants={FadeAnimationVariant} initial="hidden" whileInView={"visible"}>{`${width}%`}</StyledProgressIndicator>
       </StyledProgressForground>
     </StyledProgressBackground>
   </StyledProgressBar>
