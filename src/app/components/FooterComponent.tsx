@@ -2,7 +2,7 @@ import { GitBranch, Link, Mail } from 'lucide-react'
 
 const socials = [
   { icon: <GitBranch size={14} className='text-primary' />, href: 'https://github.com/Gurpinder009' },
-  { icon: <Link size={14} className='text-primary' />, href: 'https://linkedin.com/in/yourprofile' },
+  { icon: <Link size={14} className='text-primary' />, href: 'https://www.linkedin.com/in/gurpindersingh009/' },
   { icon: <Mail size={14} className='text-primary' />, href: 'mailto:Gurpinders1511@gmail.com' },
 ]
 
@@ -21,6 +21,7 @@ export default function FooterComponent() {
             <a
               key={i}
               href={s.href}
+              target='_blank'
               className='w-9 h-9 bg-primary-bg border border-primary/10 rounded-lg flex items-center justify-center hover:border-primary/40 transition-colors duration-300'
             >
               {s.icon}

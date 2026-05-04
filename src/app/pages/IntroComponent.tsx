@@ -66,7 +66,7 @@ export default function IntroComponent() {
                 
                 
                 </div>
-                <a href='https://github.com/Gurpinder009' className='text-sm text-primary'>github.com/Gurpinder009</a>
+                <a href='https://github.com/Gurpinder009' className='text-sm text-primary' target='_blank'>github.com/Gurpinder009</a>
               </div>
               <div className='flex items-center gap-3'>
                 <div className='w-7 h-7 bg-primary/10 rounded-md flex items-center justify-center shrink-0'>
@@ -75,7 +75,7 @@ export default function IntroComponent() {
                     <rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" />
                   </svg>
                 </div>
-                <a href="https://www.linkedin.com/in/gurpindersingh009/" className='text-sm text-primary'>
+                <a href="https://www.linkedin.com/in/gurpindersingh009/" className='text-sm text-primary' target='_blank'>
                   linkedin.com/in/gurpindersingh009
                 </a>
               </div>

@@ -43,7 +43,7 @@ const projects: Project[] = [
     title: 'Mehndistudios.com',
     desc: 'Client website for a mehndi artist — showcasing portfolio, booking info, and services. Designed and deployed for a local small business.',
     tags: ['React', 'Tailwind', 'Vercel'],
-    github: '#',
+    github: 'https://github.com/Gurpinder009/mehndistudios',
     live: 'https://www.mehndistudios.com',
     device: 'browser',
     preview: { type: 'iframe', src: 'https://www.mehndistudios.com' },
@@ -148,10 +148,10 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
       <hr className='border-primary/10' />
 
       <div className='flex gap-4'>
-        <a href={p.github} className='flex items-center gap-1.5 text-xs text-gray-400 hover:text-primary transition-colors'>
+        <a href={p.github} className='flex items-center gap-1.5 text-xs text-gray-400 hover:text-primary transition-colors' target='_blank'>
           <GitBranch size={12} /> GitHub
         </a>
-        <a href={p.live} className='flex items-center gap-1.5 text-xs text-gray-400 hover:text-primary transition-colors'>
+        <a href={p.live} className='flex items-center gap-1.5 text-xs text-gray-400 hover:text-primary transition-colors' target='_blank'>
           <ExternalLink size={12} /> Live
         </a>
       </div>
