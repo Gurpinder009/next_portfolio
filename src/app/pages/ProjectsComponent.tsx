@@ -2,6 +2,7 @@
 import { GitBranch, ExternalLink } from 'lucide-react'
 import { useScrollAnimation, useInView } from '../hooks/useScrollAnimation'
 import Image from 'next/image';
+import Chip from '../components/Chip';
 
 
 type Preview = { type: 'iframe'; src: string } | { type: 'image'; src: string } | { type: 'mock' }
@@ -40,7 +41,7 @@ const projects: Project[] = [
   },
   {
     num: '03',
-    title: 'Mehndistudios.com',
+    title: 'Mehndi Studios',
     desc: 'Client website for a mehndi artist — showcasing portfolio, booking info, and services. Designed and deployed for a local small business.',
     tags: ['React', 'Tailwind', 'Vercel'],
     github: 'https://github.com/Gurpinder009/mehndistudios',
@@ -138,10 +139,11 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
       <p className='text-sm text-gray-400 leading-relaxed flex-1'>{p.desc}</p>
 
       <div className='flex flex-wrap gap-1.5'>
+       
+
+
         {p.tags.map(tag => (
-          <span key={tag} className='text-xs font-semibold px-2 py-0.5 bg-primary/10 text-primary rounded-full tracking-wide'>
-            {tag}
-          </span>
+          <Chip key={tag} label={tag}/>
         ))}
       </div>
 

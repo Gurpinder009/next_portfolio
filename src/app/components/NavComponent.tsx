@@ -6,6 +6,7 @@ const navLinks = [
   { link: "#home", title: "Home" },
   { link: "#about", title: "About" },
   { link: "#skills", title: "Skills" },
+  { link: "#services", title: "Services" },
   { link: "#projects", title: "Projects" },
   { link: "#contact", title: "Contact Me" },
 ];
@@ -41,7 +42,7 @@ export default function NavComponent() {
         {navLinks.map(navlink => (
           <a
             key={navlink.title}
-            className="uppercase text-sm tracking-wider py-2 px-5 rounded-lg text-gray-400 hover:text-primary hover:bg-primary/10 transition-all duration-300 flex items-center w-4/5 md:w-auto"
+            className="uppercase text-sm tracking-wider py-2 px-3 rounded-lg text-gray-400 hover:text-primary hover:bg-primary/10 transition-all duration-300 flex items-center w-4/5 md:w-auto"
             href={navlink.link}
             onClick={() => setIsOpen(false)}
           >

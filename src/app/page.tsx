@@ -8,6 +8,7 @@ import ContactComponent from "./pages/ContactComponent";
 import IntroComponent from "./pages/IntroComponent";
 import ProjectsComponent from "./pages/ProjectsComponent";
 import SkillsComponent from "./pages/SkillsComponent";
+import ServicesComponent from "./pages/ServicesComponent";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -60,10 +61,25 @@ export default function Home() {
 
             <hr className="border-primary/10" />
 
+
+            <section id="services" >
+              <ServicesComponent />
+            </section>
+
+            <hr className="border-primary/10" />
+
             <section id="contact" >
               <ContactComponent />
             </section>
+
+
+
+
+             
           </main>
+
+
+       
 
           <hr className="border-primary/10" />
 

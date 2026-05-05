@@ -2,61 +2,62 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 
-
-
-
-
-
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://gurpinders009.vercel.app'),
+  // The 'title' is the most important factor for the name shown in search
   title: {
-    default: 'Gurpinder Singh Grewal — Full-Stack & Mobile Developer',
-    template: '%s | Gurpinder Singh Grewal',
+    default: 'Gurpinder Singh | Full-Stack & Mobile Developer',
+    template: '%s | Gurpinder Singh',
   },
   description:
-    'Full-stack and mobile developer based in BC, Canada. Specializing in Flutter, React, Next.js, Spring Boot, and GCP. Open to fulltime and freelance opportunities.',
+    'Full-Stack Developer and Douglas College student specializing in Flutter (Bloc/Cubit), React, Spring Boot, and Golang. Building modular, scalable web and mobile applications.',
   keywords: [
-    'Gurpinder Singh Grewal',
-    'Flutter developer',
-    'React developer',
-    'Next.js developer',
-    'Spring Boot developer',
-    'full-stack developer Canada',
-    'mobile developer BC',
-    'Douglas College developer',
-    'freelance developer Surrey BC',
+    'Gurpinder Singh',
+    'Full Stack Developer Canada',
+    'Flutter Developer Bloc Cubit',
+    'Next.js React Developer',
+    'Spring Boot Backend Developer',
+    'Golang Developer',
+    'Material 3 UI Design',
+    'Douglas College Student',
+    'Supabase SQL Integration',
+    'Mobile App Developer BC',
   ],
-  authors: [{ name: 'Gurpinder Singh Grewal', url: 'https://gurpinders009.vercel.app' }],
-  creator: 'Gurpinder Singh Grewal',
+  authors: [{ name: 'Gurpinder Singh', url: 'https://gurpinders009.vercel.app' }],
+  creator: 'Gurpinder Singh',
+  // Canonical tells Google this is the "official" version of the site
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     url: 'https://gurpinders009.vercel.app',
-    title: 'Gurpinder Singh Grewal — Full-Stack & Mobile Developer',
+    title: 'Gurpinder Singh — Full-Stack & Mobile Developer',
     description:
-      'Full-stack and mobile developer based in BC, Canada. Shipping production apps with Flutter, React, Next.js, Spring Boot, and GCP.',
+      'Full-stack and mobile developer based in BC, Canada. Specializing in Flutter, React, Next.js, and Spring Boot.',
     images: [
       {
-        url: 'https://gurpinders009.vercel.app/download2.jpg',
+        url: '/download2.jpg',
         width: 1200,
         height: 630,
-        alt: 'Gurpinder Singh Grewal — Portfolio',
+        alt: 'Gurpinder Singh Portfolio',
       },
     ],
-    siteName: 'Gurpinder Singh Grewal',
+    // siteName is a strong signal to Google for the header of the search result
+    siteName: 'Gurpinder Singh',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Gurpinder Singh Grewal — Full-Stack & Mobile Developer',
+    title: 'Gurpinder Singh — Full-Stack & Mobile Developer',
     description:
-      'Full-stack and mobile developer based in BC, Canada. Flutter, React, Next.js, Spring Boot, GCP.',
-    images: ['https://gurpinders009.vercel.app/download2.jpg'],
+      'Full-stack and mobile developer specializing in Flutter, React, and Spring Boot.',
+    images: ['/download2.jpg'],
   },
   robots: {
     index: true,
     follow: true,
   },
-}
+};
 
 export default function RootLayout({
   children,

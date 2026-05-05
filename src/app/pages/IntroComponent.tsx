@@ -1,4 +1,5 @@
 import { Mail, GitBranch } from "lucide-react";
+import Chip from "../components/Chip";
 
 const skills = ['FLUTTER', 'REACT', 'NEXT.JS', 'SPRING BOOT', 'GCP'];
 
@@ -28,11 +29,11 @@ export default function IntroComponent() {
             Not looking for a seat at the table -{' '}
             <span className='text-primary font-medium'>looking to build it.</span>
           </p>
-          <a 
-          
-          href="GurpinderSingh_Resume.pdf" download={true} 
-          
-          className=' bg-primary-bg/10 backdrop-blur-xs border border-primary/15 opacity-0 animate-fade-up delay-400 mt-2 w-fit flex items-center gap-2  text-primary px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-primary hover:text-primary-bg transition-all duration-300'>
+          <a
+
+            href="GurpinderSingh_Resume.pdf" download={true}
+
+            className=' bg-primary-bg/10 backdrop-blur-xs border border-primary/15 opacity-0 animate-fade-up delay-400 mt-2 w-fit flex items-center gap-2  text-primary px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-primary hover:text-primary-bg transition-all duration-300'>
             Download CV
           </a>
         </section>
@@ -46,25 +47,25 @@ export default function IntroComponent() {
               </div>
               <hr className='border-primary/10' />
               <div className='flex items-center gap-3'>
-                
-                 <div className='w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center shrink-0'>
-                  <Mail  size={14} className='text-primary' />
-                
-                
-                
-                
-                
+
+                <div className='w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center shrink-0'>
+                  <Mail size={14} className='text-primary' />
+
+
+
+
+
                 </div>
                 <span className='text-sm text-slate-300'>Gurpinders1511@gmail.com</span>
               </div>
               <div className='flex items-center gap-3'>
-                 <div className='w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center shrink-0'>
-                  <GitBranch  size={14} className='text-primary' />
-                
-                
-                
-                
-                
+                <div className='w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center shrink-0'>
+                  <GitBranch size={14} className='text-primary' />
+
+
+
+
+
                 </div>
                 <a href='https://github.com/Gurpinder009' className='text-sm text-primary' target='_blank'>github.com/Gurpinder009</a>
               </div>
@@ -81,11 +82,7 @@ export default function IntroComponent() {
               </div>
               <hr className='border-primary/10' />
               <div className='flex flex-wrap gap-1.5'>
-                {skills.map(s => (
-                  <span key={s} className='text-xs font-semibold px-2.5 py-1 bg-primary/10 text-primary rounded-full tracking-wide hover:bg-primary hover:text-primary-bg transition-all duration-300 cursor-default'>
-                    {s}
-                  </span>
-                ))}
+                {skills.map(s => <Chip key={s} label={s} />)}
               </div>
             </div>
           </section>
@@ -95,3 +92,6 @@ export default function IntroComponent() {
     </div>
   )
 }
+
+
+
